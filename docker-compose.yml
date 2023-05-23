@@ -10,6 +10,5 @@ services:
   
   db:
     image: mysql:latest
-    environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=nestjs-api
+    env_file:
+      - .env
